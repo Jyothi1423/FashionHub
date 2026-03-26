@@ -1,0 +1,127 @@
+.page-wrapper {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Back Button Styling */
+.back-btn {
+    background: transparent;
+    border: none;
+    color: #666;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.back-btn:hover {
+    color: #000;
+}
+
+/* Main Card */
+.product-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.image-section img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Text Content Section */
+.category-tag {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #888;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.product-title {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.rating-badge {
+    margin: 15px 0;
+    font-weight: 600;
+    color: #444;
+}
+
+.star { color: #ffbc00; font-size: 1.2rem; }
+.count { color: #888; font-weight: 400; margin-left: 10px; }
+
+.description {
+    color: #555;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Price & CTA */
+.price-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #000;
+}
+
+.buy-btn {
+    background: #000;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.buy-btn:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+/* Loader Styling */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .product-card {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}

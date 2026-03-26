@@ -1,0 +1,66 @@
+/* --- Root Variables (Light Mode) --- */
+:root {
+  --bg-nav: #ffffff;
+  --bg-nav-scrolled: rgba(255, 255, 255, 0.8);
+  --text-main: #000000;
+  --text-muted: #4b5563; /* gray-600 */
+  --text-hover: #000000;
+  --border-color: #e5e7eb; /* gray-200 */
+  --accent-color: #000000;
+  --accent-text: #ffffff;
+  --overlay-bg: #ffffff;
+}
+
+/* --- Dark Mode Variables --- */
+[data-theme='dark'] {
+  --bg-nav: #0f172a; /* slate-900 */
+  --bg-nav-scrolled: rgba(15, 23, 42, 0.9);
+  --text-main: #ffffff;
+  --text-muted: #94a3b8; /* slate-400 */
+  --text-hover: #ffffff;
+  --border-color: #1e293b; /* slate-800 */
+  --accent-color: #ffffff;
+  --accent-text: #0f172a;
+  --overlay-bg: #0f172a;
+}
+
+/* --- Global Resets --- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-nav);
+  color: var(--text-main);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- Helper Classes for your React Component --- */
+.nav-standard {
+  background-color: var(--bg-nav);
+  border-bottom: 1px solid transparent;
+}
+
+.nav-scrolled {
+  background-color: var(--bg-nav-scrolled);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+  color: var(--text-muted);
+}
+
+.nav-link:hover {
+  color: var(--text-hover);
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--accent-text);
+}
+
+.btn-outline {
+  border: 1px solid var(--accent-color);
+  color: var(--text-main);
+}
